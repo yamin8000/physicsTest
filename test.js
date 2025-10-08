@@ -1,6 +1,6 @@
 const button = document.querySelector("#button");
 const data = document.querySelector('#data');
-button.addEventListener('click', async (e) => {
+button.addEventListener("click", async () => {
     data.replaceChildren();
     const response = await fetch('https://jsonplaceholder.typicode.com/users/');
     const json = await response.json();
